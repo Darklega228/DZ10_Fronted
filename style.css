@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#user-name {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+#attempts-info {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#generate-btn {
+  background-color: #00ff00;
+  color: #000;
+  border: 1px solid #00c800;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+#generate-btn:hover {
+  background-color: #00e600;
+}
+
+#generate-btn:active {
+  transform: scale(0.98);
+}
+
+#generate-btn:disabled {
+  background-color: #cccccc;
+  border-color: #bbb;
+  cursor: not-allowed;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  background-color: #4a5482;
+  padding: 8px;
+  border: 3px solid #313754;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.cell {
+  background-color: #7b88bd;
+  border: 2px solid #3c4263;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+#result-message {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  min-height: 24px;
+}

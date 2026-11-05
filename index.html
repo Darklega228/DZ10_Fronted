@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра «Однорукий бандит»</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="user-name">User</h1>
+    <p id="attempts-info">Спроба <span id="current-attempt">1</span> з 3</p>
+
+    <button id="generate-btn">Generate</button>
+
+    <div class="slot-machine">
+      <div class="column" id="col-0">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="column" id="col-1">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="column" id="col-2">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+
+    <p id="result-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
